@@ -1,11 +1,16 @@
 def hello_t(array)
 
-  i = 0
+  int = 0
 
-  while i <array.lenth
-    yield array[i]
-    i += 1
+  while int <array.lenth
+    yield array[int]
+    int += 1
   end
 end
 
 # call your method here!
+hello_t(["Tim", "Tom", "Jim"]) do |name|
+  if name.start_with?("T")
+    puts "Hi, #{name}"
+  end
+end
