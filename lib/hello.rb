@@ -1,6 +1,6 @@
 def hello_t(array)
-if block_given?
-  
+  if block_given?
+
     int = 0
 
     while int <array.length
@@ -8,7 +8,7 @@ if block_given?
       int += 1
     end
     array
-  else 
+  else
     puts "Hey! No block was given!"
   end
 
