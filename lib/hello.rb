@@ -1,7 +1,7 @@
 def hello_t(array)
   if block_given?
 
-    int = 0
+  int = 0
 
     while int <array.length
       yield array[int]
